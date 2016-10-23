@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
-	"time"
 	"strings"
+	"time"
 )
 
 func main() {

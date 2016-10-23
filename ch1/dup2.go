@@ -1,16 +1,16 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 )
 
 /**
 Reads in a list of files given as command-line arguments (or reads from stdin if no arguments are given)
  and reads through each of the files in turn, counting the number of duplicate lines and print those which
  are duplicates to stdout
- */
+*/
 func main() {
 	counts := make(map[string]int)
 	files := os.Args[1:]
@@ -41,4 +41,3 @@ func countLines(f *os.File, counts map[string]int) {
 	}
 	// NOTE: ignoring potential errors from input.Err()
 }
-

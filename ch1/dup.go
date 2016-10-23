@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -10,7 +10,7 @@ import (
 reads lines in from standard output (until Ctrl+D) and stores the lines as
 keys in a map where the values are the number of times this line has been inputted.
 At the end it prints the count of all lines which are duplicates
- */
+*/
 func main() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
@@ -24,4 +24,3 @@ func main() {
 		}
 	}
 }
-
